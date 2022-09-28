@@ -27,8 +27,9 @@ function UseMemoChild({ listLength }) {
     setNum1(num1 + 1);
   }, [num]);
   const handelClick2 = useMemo(() => {
+    console.log('我执行了没有');
     setNum2(num2 + 1);
-  }, [num]);
+  }, []);
   return (
     <div>
       <>输入的长度为:{listLength?.length}</>
